@@ -1,0 +1,28 @@
+body {
+    width: 320px;
+}
+
+.tweet-item .btn-remove-tweet {
+    display:none;
+}
+
+.tweet-item:hover .btn-remove-tweet {
+    display: block;
+}
+
+.tweet-item .tweet-content {
+    font-weight: bold;
+}
+.tweet-item.completed .tweet-content {
+    color:darkgray;
+    font-weight: normal;
+    text-decoration: line-through;
+}
+
+#tweet-list {
+    margin-bottom: 10px;
+}
+
+#btn-remove-all {
+    margin-bottom: 10px;
+}

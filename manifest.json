@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name"            : "Tweet Movie Recommender",
+  "description"     : "A movie recommendation extension that suggests movies based on tweet",
+  "short_name"      : "TWR",
+  "version"         : "0.1",
+  "permissions": [
+      "debugger",
+      "storage",
+      "activeTab"
+  ],
+  "background": {
+    "scripts": ["app/background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_icon" : "images/logo.png"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com; object-src 'self'"
+}
